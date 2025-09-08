@@ -1,6 +1,6 @@
 .skills {
   padding: 5rem 0;
-  background: white;
+  background: var(--color-surface);
 }
 
 .skills-content {
@@ -12,7 +12,7 @@
 .skills-subtitle {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -24,11 +24,11 @@
 }
 
 .skill-card {
-  background: white;
+  background: var(--color-surface-2);
   padding: 1.5rem;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -40,26 +40,29 @@
 .skill-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill-card h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
 }
 
 .skill-level {
   width: 100%;
   height: 8px;
-  background: #e9ecef;
+  background: #1f2937;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .skill-bar {
   height: 100%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-accent);
   border-radius: 4px;
   transition: width 0.8s ease;
 }
@@ -70,10 +73,10 @@
 }
 
 .soft-skill {
-  background: white;
+  background: var(--color-surface-2);
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
   transition: transform 0.3s ease;
 }
 
@@ -84,12 +87,12 @@
 .soft-skill h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 0.5rem;
 }
 
 .soft-skill p {
-  color: #666;
+  color: var(--color-muted);
   line-height: 1.6;
   margin: 0;
 }

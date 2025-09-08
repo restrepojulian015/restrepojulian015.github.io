@@ -1,9 +1,16 @@
-import { Component } from "@angular/core";
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../../services/translation';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: "app-footer",
+  selector: 'app-footer',
   standalone: true,
-  templateUrl: "./footer.html",
-  styleUrl: "./footer.css"
+  imports: [CommonModule],
+  templateUrl: './footer.html',
+  styleUrl: './footer.css'
 })
-export class FooterComponent {}
+export class FooterComponent {
+  translationService = inject(TranslationService);
+  currentYear = new Date().getFullYear();
+  currentLanguage = this.translationService.currentLanguage;
+}

@@ -23,10 +23,15 @@
         <a href="#contact" class="nav-link">{{ translationService.translate("nav.contact") }}</a>
       </li>
     </ul>
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <div class="nav-actions">
+      <button class="language-toggle" (click)="toggleLanguage()">
+        {{ translationService.currentLanguage() === 'es' ? 'EN' : 'ES' }}
+      </button>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
   </div>
 </nav>

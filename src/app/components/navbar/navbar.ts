@@ -9,4 +9,8 @@ import { TranslationService } from "../../services/translation";
 })
 export class NavbarComponent {
   translationService = inject(TranslationService);
+
+  toggleLanguage() {
+    this.translationService.switchLanguage();
+  }
 }

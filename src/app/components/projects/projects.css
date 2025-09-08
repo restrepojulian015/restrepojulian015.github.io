@@ -1,6 +1,6 @@
 .projects {
   padding: 5rem 0;
-  background: #f8f9fa;
+  background: var(--color-surface);
 }
 
 .projects-grid {
@@ -10,10 +10,10 @@
 }
 
 .project-card {
-  background: white;
+  background: var(--color-surface-2);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -24,7 +24,7 @@
 
 .project-image {
   height: 200px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +32,7 @@
 
 .image-placeholder {
   font-size: 4rem;
-  color: white;
+  color: var(--color-text);
 }
 
 .project-content {
@@ -42,12 +42,12 @@
 .project-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 1rem;
 }
 
 .project-description {
-  color: #666;
+  color: var(--color-muted);
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -60,8 +60,8 @@
 }
 
 .tech-tag {
-  background: #e9ecef;
-  color: #495057;
+  background: #1f2937;
+  color: var(--color-text);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -84,24 +84,24 @@
 }
 
 .btn-primary {
-  background: #007bff;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-text);
 }
 
 .btn-primary:hover {
-  background: #0056b3;
+  background: var(--color-primary-700);
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #007bff;
-  border: 2px solid #007bff;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .btn-secondary:hover {
-  background: #007bff;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-text);
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,5 @@
 <div class="language-switcher">
-  <button class="lang-btn" (click)="switchLanguage()">
-    <span class="lang-icon">🌐</span>
-    <span class="lang-text">{{ translationService.currentLanguage() === "es" ? "EN" : "ES" }}</span>
+  <button class="lang-btn" (click)="switchLanguage()" [attr.aria-label]="translationService.currentLanguage() === 'es' ? 'Switch to English' : 'Cambiar a Español'">
+    {{ translationService.currentLanguage() === "es" ? "EN" : "ES" }}
   </button>
 </div>
